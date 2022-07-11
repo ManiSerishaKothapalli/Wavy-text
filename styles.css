@@ -1,3 +1,4 @@
+/* Google font */
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
 body {
@@ -14,19 +15,22 @@ div > span {
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 4px;
   animation: wavy 2s infinite;
-  animation-delay: calc(.1s * var(--i));
+  animation-delay: calc(0.1s * var(--i));
   display: inline-block;
 }
 
 @keyframes wavy {
-  0%,40%,60%,100% {
+  0%,
+  40%,
+  60%,
+  100% {
     transform: translateY(0);
   }
-  40%{
-    color:#0000ff;
+  40% {
+    color: #0000ff;
   }
   20% {
     transform: translateY(-40px);
-    color:#e22bbd;
+    color: #e22bbd;
   }
 }
